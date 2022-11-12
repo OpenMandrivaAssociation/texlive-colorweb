@@ -1,19 +1,13 @@
-# revision 31490
-# category Package
-# catalog-ctan /macros/latex/contrib/colorweb
-# catalog-date 2013-08-21 17:22:18 +0200
-# catalog-license lppl1.3
-# catalog-version 1.3
 Name:		texlive-colorweb
-Version:	1.3
-Release:	10
+Version:	31490
+Release:	1
 Summary:	Extend the color package colour space
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/colorweb
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colorweb.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colorweb.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colorweb.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colorweb.r31490.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colorweb.doc.r31490.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colorweb.source.r31490.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ The package makes the 216 "web-safe colours" available to the
 standard color package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +39,8 @@ standard color package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
