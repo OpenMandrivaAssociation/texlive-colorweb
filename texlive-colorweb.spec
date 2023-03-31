@@ -1,6 +1,6 @@
 Name:		texlive-colorweb
 Version:	31490
-Release:	1
+Release:	2
 Summary:	Extend the color package colour space
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/colorweb
