@@ -3,7 +3,7 @@ Version:	31490
 Release:	2
 Summary:	Extend the color package colour space
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/colorweb
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/colorweb
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colorweb.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colorweb.doc.r%{version}.tar.xz
